@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Lawn Busterz Property Maintenance | Richmond, KY</title>
+<meta name="description" content="Family-owned, licensed and insured. Lawn Busterz is a Kentucky property maintenance crew built on snow plows, sharp blades, and showing up when it matters. Sister company to Clog Busterz LLC.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Lawn Busterz — Family-owned Kentucky property crew">
+<meta property="og:description" content="The story behind Lawn Busterz: family-owned, licensed, insured, and built around year-round Kentucky property work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500;700&family=Fraunces:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* About-page specific layouts */
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 56px;
+    align-items: start;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .story-grid h2 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: .92;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .story-grid h2 em {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: lowercase;
+    color: var(--marigold);
+  }
+  .story-grid p {
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 16px;
+    color: var(--cream-2);
+  }
+  .story-grid p strong { color: var(--cream); }
+
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .pillar {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 32px;
+    border: 2px solid var(--marigold);
+    box-shadow: 6px 6px 0 var(--marigold);
+    transition: transform .2s;
+  }
+  .pillar:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--marigold); }
+  .pillar-num {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .22em;
+    color: var(--marigold);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .pillar h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .pillar p { font-size: 15px; color: var(--cream-2); line-height: 1.55; }
+
+  .fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 14px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .fleet-grid .img-slot { color: var(--ink); }
+  .fleet-grid .item-l { grid-column: span 6; aspect-ratio: 4/3; }
+  .fleet-grid .item-m { grid-column: span 6; aspect-ratio: 3/2; }
+  .fleet-grid .item-s { grid-column: span 4; aspect-ratio: 1/1; }
+  .fleet-grid .item-w { grid-column: span 8; aspect-ratio: 16/9; }
+  .fleet-grid .item-q { grid-column: span 4; aspect-ratio: 1/1; }
+  @media (max-width: 900px) {
+    .fleet-grid .item-l, .fleet-grid .item-m, .fleet-grid .item-w { grid-column: span 12; }
+    .fleet-grid .item-s, .fleet-grid .item-q { grid-column: span 6; }
+  }
+  @media (max-width: 520px) {
+    .fleet-grid .item-s, .fleet-grid .item-q { grid-column: span 12; }
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .team-card { background: var(--cream-2); padding: 0; border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
+  .team-card .img-slot { border: 0; border-bottom: 2px solid var(--ink); aspect-ratio: 4/5; }
+  .team-card .body { padding: 22px; }
+  .team-card h3 {
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .team-card .role {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .2em;
+    color: var(--rust);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .team-card p { font-size: 14px; color: var(--moss); line-height: 1.55; }
+
+  .sister-banner {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 50px 40px;
+    border-top: 2px solid var(--marigold);
+    border-bottom: 2px solid var(--marigold);
+    text-align: center;
+  }
+  .sister-banner .eyebrow {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .3em;
+    color: var(--marigold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .sister-banner h3 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(24px, 3vw, 36px);
+    text-transform: uppercase;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .sister-banner h3 strong { color: var(--marigold); }
+  .sister-banner p {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--cream-2);
+    max-width: 600px;
+    margin: 10px auto 0;
+  }
+
+  .area-section { text-align: center; }
+  .area-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    margin-top: 28px;
+  }
+  .area-list li {
+    padding: 10px 18px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--cream);
+  }
+
+  .stat-strip {
+    background: var(--marigold);
+    color: var(--ink);
+    border-top: 4px solid var(--ink);
+    border-bottom: 4px solid var(--ink);
+    padding: 36px 40px;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .stat-row .num {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1;
+  }
+  .stat-row .lbl {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  @media (max-width: 1000px) {
+    .story-grid { grid-template-columns: 1fr; gap: 32px; }
+    .pillar-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 700px) {
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .pillar-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+    .sister-banner { padding: 36px 20px; }
+    .stat-strip { padding: 28px 20px; }
+    .pillar { padding: 24px; }
+    .area-list li { padding: 8px 14px; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-strip">
+  <div class="left">
+    <span class="badge">*</span><span>Licensed &amp; Insured</span><span>|</span>
+    <span>Family-owned</span><span>|</span>
+    <span>Year-round, 365</span>
+  </div>
+  <div class="right">
+    <a href="mailto:hello@lawnbusterz.com">hello@lawnbusterz.com</a>
+    <span>|</span>
+    <a href="tel:+18592480576"><strong>(859) 248-0576</strong></a>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo">
+    <span class="logo-mark">L</span><span>Lawn Busterz</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html">All Services</a></li>
+    <li><a href="index.html#gallery">Work</a></li>
+    <li><a href="about.html" class="is-active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="index.html#spin" class="nav-tag"><span class="nav-tag-star">★</span> Pull To Save</a>
+  <a href="tel:+18592480576" class="nav-phone">(859) 248-0576</a>
+  <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-sheet" id="mobileSheet" aria-hidden="true">
+  <button class="mobile-sheet-close" id="sheetClose" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="services.html">All Services</a>
+  <a href="about.html" class="accent">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html#gallery">Recent Work</a>
+  <a href="index.html#spin" class="accent">★ Pull To Save</a>
+  <a href="index.html#bundle">Build a Bust Pack</a>
+  <a href="tel:+18592480576" class="sheet-cta">Call (859) 248-0576</a>
+</div>
+
+<div class="page-banner">Family-owned · Licensed &amp; Insured · Richmond, Kentucky</div>
+
+<section class="page-hero">
+  <div class="hero-eyebrow">// About Lawn Busterz</div>
+  <h1 class="hero-title">Family-owned.<br><em>Boots-on</em> in Kentucky.</h1>
+  <p class="hero-sub">Lawn Busterz started in a Richmond, KY garage with a snow plow, a sharp blade, and a phone that wouldn't stop ringing in a storm. We built the rest of the company around the same idea: when something on your property needs to get done, the right crew shows up and does it.</p>
+  <div class="hero-cta-row">
+    <a href="services.html" class="btn-primary">See All Services</a>
+    <a href="contact.html" class="btn-ghost">Get in Touch</a>
+  </div>
+</section>
+
+<div class="hazard-stripe"></div>
+
+<!-- STORY -->
+<section class="section bg-moss-2">
+  <div class="story-grid">
+    <div>
+      <div class="section-eyebrow" style="color:var(--marigold);">// The Story</div>
+      <h2>It started with <em>a plow.</em></h2>
+      <p>The first version of Lawn Busterz was a single truck and a snow plow taking <strong>3am calls</strong> across Madison County. Driveways, walkways, parking lots — whatever needed clearing before the morning rush.</p>
+      <p>One winter turned into a full year of property work. Customers asked if we mowed in the summer. Then if we mulched. Then if we could fix the standing water in the back yard. The answer kept being <strong>yes</strong>, and the equipment list kept growing.</p>
+      <p>Today Lawn Busterz runs ten core services across Central Kentucky — mowing, mulching, weed control, flea &amp; tick spraying, debris cleanup, snow removal, skid steer, excavator, French drains, and weedeating. Same family. Same number. Same crew that started in the snow.</p>
+    </div>
+    <div class="img-slot ratio-4x3">
+      <img src="assets/img/about-founder-truck.png" alt="Family-owned contractor truck with snow plow and mower trailer at golden hour" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stat-strip">
+  <div class="stat-row">
+    <div><div class="num">10</div><div class="lbl">Core Services</div></div>
+    <div><div class="num">365</div><div class="lbl">Days A Year</div></div>
+    <div><div class="num">9</div><div class="lbl">Cities Served</div></div>
+    <div><div class="num">24h</div><div class="lbl">Quote Turnaround</div></div>
+  </div>
+</div>
+
+<!-- PILLARS -->
+<section class="section bg-ink">
+  <div style="max-width:1300px;margin:0 auto;">
+    <div class="section-head" style="border-color:var(--cream);">
+      <div>
+        <div class="section-eyebrow" style="color:var(--marigold);">// What We Stand On</div>
+        <h2 class="section-title">Three <em>pillars.</em></h2>
+      </div>
+      <div class="section-meta" style="color:var(--cream-2);">No fluff.<br>This is what you're hiring.</div>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="pillar-num">// 01</div>
+        <h3>Licensed &amp; Insured</h3>
+        <p>Full coverage on every job — including the heavy-equipment work like skid steer and excavator. Proof of insurance is always available on request. No "guy with a truck" risk on your property.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">// 02</div>
+        <h3>Year-Round</h3>
+        <p>Spring through fall: mowing, mulching, weed control, drainage, dirt work. Winter: 24/7 plowing, salting, and storm response. One company, one phone number, all twelve months.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">// 03</div>
+        <h3>Family-Owned</h3>
+        <p>Locally owned and run out of Richmond, KY. We live where we work. That means a real person picks up the phone, and the same crew shows up next time — not a rotating door of subs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section class="section bg-cream-2">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div class="section-head" style="border-color:var(--ink);color:var(--ink);">
+      <div>
+        <div class="section-eyebrow" style="color:var(--rust);">// The Fleet</div>
+        <h2 class="section-title">Right machine. <em>Right job.</em></h2>
+      </div>
+      <div class="section-meta" style="color:var(--moss);">Trucks, mowers, plows,<br>skid steer, excavator,<br>and a beat-up trailer that earns its keep.</div>
+    </div>
+    <div class="fleet-grid">
+      <div class="img-slot on-cream item-l">
+        <img src="assets/img/fleet-truck.png" alt="White work pickup truck with utility trailer loaded with commercial mowers" loading="lazy">
+      </div>
+      <div class="img-slot on-cream item-m">
+        <img src="assets/img/fleet-mower.png" alt="Heavy-duty green commercial zero-turn lawnmower" loading="lazy">
+      </div>
+      <div class="img-slot on-cream item-s">
+        <img src="assets/img/fleet-skid.png" alt="Orange-and-black compact skid steer loader" loading="lazy">
+      </div>
+      <div class="img-slot on-cream item-s">
+        <img src="assets/img/fleet-excavator.png" alt="Yellow mini-excavator on a residential job site" loading="lazy">
+      </div>
+      <div class="img-slot on-cream item-s">
+        <img src="assets/img/fleet-plow.png" alt="Heavy-duty yellow snow plow blade mounted on a black pickup truck" loading="lazy">
+      </div>
+      <div class="img-slot on-cream item-w">
+        <img src="assets/img/fleet-crew.png" alt="Three lawn-care workers loading equipment onto a trailer at golden hour" loading="lazy">
+      </div>
+      <div class="img-slot on-cream item-q">
+        <img src="assets/img/fleet-sprayer.png" alt="Yellow backpack sprayer and lawn-care equipment on a driveway" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section bg-moss">
+  <div style="max-width:1300px;margin:0 auto;">
+    <div class="section-head" style="border-color:var(--cream);">
+      <div>
+        <div class="section-eyebrow" style="color:var(--marigold);">// The Crew</div>
+        <h2 class="section-title">Who shows <em>up.</em></h2>
+      </div>
+      <div class="section-meta" style="color:var(--cream-2);">Real names. Real faces.<br>Same crew every visit.</div>
+    </div>
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="img-slot ratio-3x4">
+          <div class="img-slot-inner">
+            <div class="img-slot-eyebrow">// Photo Placeholder</div>
+            <div class="img-slot-label">Founder portrait</div>
+            <div class="img-slot-hint">Outdoor, with a truck or machine</div>
+          </div>
+        </div>
+        <div class="body">
+          <h3>[Founder Name]</h3>
+          <div class="role">// Owner / Operator</div>
+          <p>The first hand on the plow and the last call in the storm. Runs every walk-through, signs every quote, and still drives the lead truck.</p>
+        </div>
+      </article>
+      <article class="team-card">
+        <div class="img-slot ratio-3x4">
+          <div class="img-slot-inner">
+            <div class="img-slot-eyebrow">// Photo Placeholder</div>
+            <div class="img-slot-label">Crew lead</div>
+            <div class="img-slot-hint">Action shot, on a mow or dig</div>
+          </div>
+        </div>
+        <div class="body">
+          <h3>[Crew Lead Name]</h3>
+          <div class="role">// Field Lead</div>
+          <p>Runs the daily route. Sharpens the blades, fuels the rigs, makes sure the cuts are straight and the edges are clean. The reason your yard looks the same every visit.</p>
+        </div>
+      </article>
+      <article class="team-card">
+        <div class="img-slot ratio-3x4">
+          <div class="img-slot-inner">
+            <div class="img-slot-eyebrow">// Photo Placeholder</div>
+            <div class="img-slot-label">Heavy equipment op</div>
+            <div class="img-slot-hint">In the seat of skid / excavator</div>
+          </div>
+        </div>
+        <div class="body">
+          <h3>[Operator Name]</h3>
+          <div class="role">// Heavy Equipment</div>
+          <p>Skid steer, excavator, French drain trench work, demolition, grading. If the job needs a machine bigger than a push mower, this is who's running it.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SISTER -->
+<div class="sister-banner">
+  <div class="eyebrow">// Family of Brands</div>
+  <h3>Sister company to <strong>Clog Busterz LLC</strong> — Kentucky plumbing.</h3>
+  <p>Same family, same standard. If the problem is below the dirt, Clog Busterz handles it. If it's on top, that's us.</p>
+</div>
+
+<!-- AREA -->
+<section class="section bg-ink area-section">
+  <div style="max-width:900px;margin:0 auto;">
+    <div class="section-eyebrow" style="color:var(--marigold);">// Service Area</div>
+    <h2 class="section-title" style="margin-bottom:14px;">Central <em>Kentucky.</em></h2>
+    <p style="color:var(--cream-2);font-size:18px;max-width:580px;margin:0 auto;">Headquartered in Richmond. Trucks roll daily across Madison and Fayette counties.</p>
+    <ul class="area-list">
+      <li>Richmond</li><li>Lexington</li><li>Berea</li>
+      <li>Winchester</li><li>Nicholasville</li><li>Mount Sterling</li>
+      <li>Stanford</li><li>Danville</li><li>Lancaster</li>
+      <li>Madison County</li><li>Fayette County</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-marigold" style="background:var(--marigold);color:var(--ink);text-align:center;">
+  <div style="max-width:900px;margin:0 auto;">
+    <div class="section-eyebrow" style="color:var(--rust);">// Get The Crew</div>
+    <h2 class="section-title" style="margin-bottom:18px;">Let's <em style="color:var(--rust);">bust</em> something.</h2>
+    <p style="font-size:18px;max-width:560px;margin:0 auto 28px;color:var(--ink);">Free walk-throughs, 24h quote turnaround. Same family-run crew, year-round.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
+      <a href="contact.html" class="btn-primary" style="background:var(--ink);color:var(--marigold);border-color:var(--ink);box-shadow:4px 4px 0 var(--cream);">Get a Free Quote</a>
+      <a href="tel:+18592480576" class="btn-secondary" style="background:var(--cream);border-color:var(--ink);">(859) 248-0576</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo">LAWN BUSTERZ</div>
+      <p class="foot-tag">Property maintenance done right — first mow of spring to last shovel of winter.</p>
+      <address style="font-style:normal;font-size:14px;line-height:1.7;">
+        <strong>Lawn Busterz Property Maintenance</strong><br>
+        Richmond, Kentucky<br>
+        <a href="tel:+18592480576">(859) 248-0576</a><br>
+        <a href="mailto:hello@lawnbusterz.com">hello@lawnbusterz.com</a>
+      </address>
+    </div>
+    <div class="foot-col">
+      <h4>Lawn &amp; Yard</h4>
+      <a href="services.html#mowing">Mowing</a>
+      <a href="services.html#mulching">Mulching</a>
+      <a href="services.html#weed-control">Weed Control</a>
+      <a href="services.html#weedeating">Weedeating</a>
+    </div>
+    <div class="foot-col">
+      <h4>Heavy &amp; Specialty</h4>
+      <a href="services.html#snow">Snow Removal</a>
+      <a href="services.html#skid-steer">Skid Steer</a>
+      <a href="services.html#excavator">Excavator</a>
+      <a href="services.html#french-drain">French Drains</a>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html#spin">Pull To Save</a>
+      <a href="index.html#bundle">Bust Pack</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Lawn Busterz Property Maintenance · Richmond, Kentucky · Licensed &amp; Insured</span>
+    <span>Sister Co. of Clog Busterz LLC</span>
+  </div>
+</footer>
+
+<div class="sticky-mobile-bar">
+  <a class="call" href="tel:+18592480576">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+    Call Now
+  </a>
+  <a class="text" href="sms:+18592480576?&body=Hey Lawn Busterz, I need a quote for ">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    Text Quote
+  </a>
+</div>
+
+<script>
+  (function(){
+    var burger = document.getElementById('burger');
+    var sheet  = document.getElementById('mobileSheet');
+    var close  = document.getElementById('sheetClose');
+    function toggle(open){
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      sheet.classList.toggle('open', open);
+      sheet.setAttribute('aria-hidden', open ? 'false' : 'true');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    burger.addEventListener('click', function(){ toggle(!sheet.classList.contains('open')); });
+    close.addEventListener('click', function(){ toggle(false); });
+    sheet.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ toggle(false); }); });
+  })();
+</script>
+
+</body>
+</html>

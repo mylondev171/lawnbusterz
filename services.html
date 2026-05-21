@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Services — Lawn Busterz Property Maintenance | Richmond, KY</title>
+<meta name="description" content="The full Lawn Busterz service list: mowing, mulching, weed control, flea &amp; tick, snow removal, French drains, skid steer, excavator, debris cleanup, weedeating. Central Kentucky. Licensed &amp; insured.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Services — Lawn Busterz Property Maintenance">
+<meta property="og:description" content="Ten core services. One Kentucky crew. Mow it. Plow it. Trench it. Bust it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500;700&family=Fraunces:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .services-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 2px solid var(--ink);
+    background: var(--ink);
+  }
+  .svc {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 0;
+    background: var(--cream);
+    color: var(--ink);
+  }
+  .svc + .svc { border-top: 2px solid var(--ink); }
+  .svc:nth-child(even) { background: var(--cream-2); }
+  .svc .img-slot { min-height: 100%; border: 0; border-right: 2px solid var(--ink); }
+  .svc:nth-child(even) .img-slot { border-color: var(--ink); }
+  .svc-body { padding: 40px 36px; }
+  .svc-num {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    letter-spacing: .22em;
+    color: var(--rust);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .svc h2 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(32px, 4.4vw, 52px);
+    line-height: .95;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .svc h2 em {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: lowercase;
+    color: var(--marigold);
+  }
+  .svc p.lede { font-size: 17px; line-height: 1.5; margin-bottom: 18px; max-width: 56ch; }
+  .svc .meta-pills {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: 22px;
+  }
+  .svc .pill {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    background: var(--ink);
+    color: var(--marigold);
+  }
+  .svc .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--moss);
+  }
+  .svc .row-2 h4 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--moss);
+    margin-bottom: 8px;
+  }
+  .svc .row-2 ul { list-style: none; font-size: 14px; }
+  .svc .row-2 li { padding: 4px 0; }
+  .svc .row-2 li::before { content: "›"; color: var(--marigold); margin-right: 6px; font-weight: 700; }
+  .svc .cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+  .svc.featured {
+    background: var(--moss);
+    color: var(--cream);
+  }
+  .svc.featured.drain { background: var(--moss-2); }
+  .svc.featured .svc-num { color: var(--marigold); }
+  .svc.featured .row-2 h4 { color: var(--cream-2); }
+  .svc.featured .row-2 { border-top-color: var(--cream-2); }
+  .svc.featured .img-slot { border-right-color: var(--marigold); }
+  .badge {
+    display: inline-block;
+    background: var(--marigold);
+    color: var(--ink);
+    padding: 4px 10px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .bundle-strip {
+    background: var(--marigold);
+    color: var(--ink);
+    text-align: center;
+    padding: 56px 40px;
+    border-top: 4px solid var(--ink);
+    border-bottom: 4px solid var(--ink);
+  }
+  .bundle-strip h2 {
+    font-family: "Anton", sans-serif;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: .95;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .bundle-strip h2 em {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: lowercase;
+  }
+  .bundle-strip .tiers {
+    display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+    margin-top: 18px;
+  }
+  .bundle-strip .tier {
+    background: var(--ink);
+    color: var(--marigold);
+    padding: 12px 18px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  @media (max-width: 900px) {
+    .svc { grid-template-columns: 1fr; }
+    .svc .img-slot { border-right: 0; border-bottom: 2px solid var(--ink); min-height: 240px; }
+    .svc-body { padding: 28px 22px; }
+    .svc .row-2 { grid-template-columns: 1fr; gap: 14px; }
+  }
+  @media (max-width: 600px) {
+    .svc-body { padding: 24px 18px; }
+    .svc .img-slot { min-height: 200px; }
+    .svc h2 { font-size: clamp(28px, 8vw, 40px); }
+    .svc p.lede { font-size: 15px; }
+    .svc .pill { font-size: 9px; padding: 5px 9px; letter-spacing: .1em; }
+    .svc .cta-row .btn-primary,
+    .svc .cta-row .btn-secondary { width: 100%; text-align: center; }
+    .bundle-strip { padding: 40px 18px; }
+    .bundle-strip .tier { font-size: 10px; padding: 10px 14px; letter-spacing: .1em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-strip">
+  <div class="left">
+    <span class="badge">*</span><span>Licensed &amp; Insured</span><span>|</span>
+    <span>Free Estimates</span><span>|</span>
+    <span>Bundle 4+ Services = 15% Off</span>
+  </div>
+  <div class="right">
+    <a href="mailto:hello@lawnbusterz.com">hello@lawnbusterz.com</a>
+    <span>|</span>
+    <a href="tel:+18592480576"><strong>(859) 248-0576</strong></a>
+  </div>
+</div>
+
+<nav class="site-nav">
+  <a href="index.html" class="logo">
+    <span class="logo-mark">L</span><span>Lawn Busterz</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html" class="is-active">All Services</a></li>
+    <li><a href="index.html#gallery">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="index.html#spin" class="nav-tag"><span class="nav-tag-star">★</span> Pull To Save</a>
+  <a href="tel:+18592480576" class="nav-phone">(859) 248-0576</a>
+  <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-sheet" id="mobileSheet" aria-hidden="true">
+  <button class="mobile-sheet-close" id="sheetClose" aria-label="Close">✕</button>
+  <a href="index.html">Home</a>
+  <a href="services.html" class="accent">All Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html#gallery">Recent Work</a>
+  <a href="index.html#spin" class="accent">★ Pull To Save</a>
+  <a href="index.html#bundle">Build a Bust Pack</a>
+  <a href="tel:+18592480576" class="sheet-cta">Call (859) 248-0576</a>
+</div>
+
+<div class="page-banner">10 Core Services · Central Kentucky · 365 Days A Year</div>
+
+<section class="page-hero">
+  <div class="hero-eyebrow">// All Services</div>
+  <h1 class="hero-title">Every <em>tool.</em><br>Every season.</h1>
+  <p class="hero-sub">From the first cut of spring to the last shovel of winter — Lawn Busterz is the one crew, one number, one invoice for every property job in Central Kentucky. Bundle anything, save more.</p>
+  <div class="hero-cta-row">
+    <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+    <a href="tel:+18592480576" class="btn-ghost">Call (859) 248-0576</a>
+  </div>
+</section>
+
+<div class="hazard-stripe"></div>
+
+<section class="section bg-cream">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div class="section-head" style="border-color:var(--ink);">
+      <div>
+        <div class="section-eyebrow">// SVC / 01 — 10</div>
+        <h2 class="section-title">The <em>full</em><br>property kit.</h2>
+      </div>
+      <div class="section-meta">
+        Residential + Commercial<br>
+        Richmond · Lexington · Berea<br>
+        Free walk-through quotes
+      </div>
+    </div>
+
+    <div class="services-list">
+
+      <article class="svc" id="mowing">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-mowing.png" alt="Freshly mowed Kentucky lawn with crisp diagonal stripes" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 01 — Lawn Mowing</div>
+          <h2>Lawn <em>Mowing</em></h2>
+          <p class="lede">Clean cuts. Sharp edges. Striped lawns that look like the cover of a tractor catalog. Weekly, bi-weekly, or one-shot — pick what fits the yard and the budget.</p>
+          <div class="meta-pills">
+            <span class="pill">Weekly</span>
+            <span class="pill">Bi-weekly</span>
+            <span class="pill">One-Time</span>
+            <span class="pill">Residential + Commercial</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Included</h4>
+              <ul>
+                <li>Mow + trim + edge</li>
+                <li>Blow-off hardscapes</li>
+                <li>Sharp blade every visit</li>
+                <li>Hauled clippings (optional)</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Good For</h4>
+              <ul>
+                <li>Standard residential lots</li>
+                <li>HOA / rental properties</li>
+                <li>Small commercial parcels</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=mowing" class="btn-primary">Quote My Yard</a>
+            <a href="index.html#estimator" class="btn-secondary">Estimator</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="weedeating">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-weedeating.png" alt="Crisp string-trimmed edge along a residential driveway" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 02 — Weedeating &amp; Edging</div>
+          <h2>Weedeat <em>&amp; edge.</em></h2>
+          <p class="lede">Detail work that makes the whole job look pro. Crisp lines along driveways, fences, beds, and tree rings — the difference between "mowed" and "manicured."</p>
+          <div class="meta-pills">
+            <span class="pill">String Trim</span>
+            <span class="pill">Edging</span>
+            <span class="pill">Detail Pass</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Included</h4>
+              <ul>
+                <li>Trim along all fixed edges</li>
+                <li>Stick edge driveways &amp; walks</li>
+                <li>Around trees &amp; landscape beds</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Add To</h4>
+              <ul>
+                <li>Any mowing visit</li>
+                <li>Pre-event prep</li>
+                <li>For-sale curb-appeal pass</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=weedeating" class="btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="mulching">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-mulching.png" alt="Freshly mulched landscape bed with dark hardwood mulch" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 03 — Mulching</div>
+          <h2>Mulch, <em>bedded right.</em></h2>
+          <p class="lede">Hardwood, dyed brown, dyed black, or natural — beds prepped, weeds pulled, edges cut, mulch laid at the right depth so it actually does its job.</p>
+          <div class="meta-pills">
+            <span class="pill">Hardwood</span>
+            <span class="pill">Dyed Brown</span>
+            <span class="pill">Dyed Black</span>
+            <span class="pill">Natural</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Included</h4>
+              <ul>
+                <li>Weed pull + bed prep</li>
+                <li>Fresh edge cut</li>
+                <li>Mulch installed 2-3" deep</li>
+                <li>Cleanup of hardscapes</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Best Time</h4>
+              <ul>
+                <li>Early spring refresh</li>
+                <li>Late summer top-up</li>
+                <li>Before-listing pop</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=mulching" class="btn-primary">Quote My Beds</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="weed-control">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-weed-control.png" alt="Lawn care professional applying weed control with backpack sprayer" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 04 — Weed Control</div>
+          <h2>Weed control <em>&amp; treatment.</em></h2>
+          <p class="lede">Pre-emergent stops weeds before they start. Post-emergent kills what already broke through. Yard-safe, pet-conscious — applied at the right rate for Kentucky turf.</p>
+          <div class="meta-pills">
+            <span class="pill">Pre-emergent</span>
+            <span class="pill">Post-emergent</span>
+            <span class="pill">Spot Treat</span>
+            <span class="pill">Pet-Conscious</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Included</h4>
+              <ul>
+                <li>Lawn walkthrough &amp; diagnosis</li>
+                <li>Targeted application</li>
+                <li>Re-treat schedule on request</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Pairs With</h4>
+              <ul>
+                <li>Mowing contracts</li>
+                <li>Flea &amp; tick spraying</li>
+                <li>Spring property refresh</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=weed-control" class="btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="flea-tick">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-flea-tick.png" alt="Flea and tick yard treatment in a family backyard" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 05 — Flea &amp; Tick</div>
+          <h2>Flea <em>&amp; tick</em> spray.</h2>
+          <p class="lede">Yard-wide treatment that puts a serious dent in the population. Pets stay happier. Kids stay itchier in good ways (chigger-bite-free).</p>
+          <div class="meta-pills">
+            <span class="pill">Yard Pests</span>
+            <span class="pill">Fleas</span>
+            <span class="pill">Ticks</span>
+            <span class="pill">Mosquito Add-on</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Included</h4>
+              <ul>
+                <li>Perimeter + shaded zones</li>
+                <li>Tall-grass &amp; brush edges</li>
+                <li>Re-treat reminder</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Frequency</h4>
+              <ul>
+                <li>Spring + summer rotation</li>
+                <li>Single-shot for events</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=flea-tick" class="btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc featured" id="snow">
+        <div class="img-slot ratio-4x3">
+          <img src="assets/img/svc-snow.png" alt="Black pickup truck with yellow plow clearing a snowy commercial lot at pre-dawn" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <span class="badge">Founder's Service</span>
+          <div class="svc-num">SVC / 06 — Snow Removal &amp; Plowing</div>
+          <h2>Snow removal <em>&amp; plowing.</em></h2>
+          <p class="lede">The service that started Lawn Busterz. 24/7 storm response, residential and commercial. Plowing, shoveling, salting — driveways, parking lots, walkways. Seasonal contracts available.</p>
+          <div class="meta-pills">
+            <span class="pill">24/7 Storm</span>
+            <span class="pill">Residential</span>
+            <span class="pill">Commercial</span>
+            <span class="pill">Salt Service</span>
+            <span class="pill">Seasonal Contract</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Pricing Snapshot</h4>
+              <ul>
+                <li>2-car driveway: $45-$75</li>
+                <li>3-4 car driveway: $75-$125</li>
+                <li>Salt: $25-$50 add-on</li>
+                <li>Seasonal: $400-$700</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Commercial</h4>
+              <ul>
+                <li>Hourly: $95-$150</li>
+                <li>Plow + salt + walkways</li>
+                <li>Priority response contracts</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=snow" class="btn-primary">Get on the Storm List</a>
+            <a href="tel:+18592480576" class="btn-ghost">Call (859) 248-0576</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="debris">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-debris.png" alt="Open trailer loaded with storm debris in a residential driveway" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 07 — Debris Cleanup</div>
+          <h2>Debris <em>cleanup.</em></h2>
+          <p class="lede">Storm cleanup, leaf removal, brush hauling. We bring the trailer, the rakes, the chainsaw, and the muscle. Yard goes from disaster to done.</p>
+          <div class="meta-pills">
+            <span class="pill">Storm Cleanup</span>
+            <span class="pill">Leaf Removal</span>
+            <span class="pill">Brush Haul</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Included</h4>
+              <ul>
+                <li>Pickup, drag-out, load</li>
+                <li>Haul to disposal</li>
+                <li>Final blow-down</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Good For</h4>
+              <ul>
+                <li>Post-storm yards</li>
+                <li>Fall leaf blow-out</li>
+                <li>Lot clears + listings</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=debris" class="btn-primary">Schedule a Cleanup</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="skid-steer">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-skid-steer.png" alt="Compact skid steer loader pushing gravel on a job site" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 08 — Skid Steer</div>
+          <h2>Skid <em>steer.</em></h2>
+          <p class="lede">Grading, leveling, gravel hauling, light demo, material moving. Operator included. The machine does the heavy lifting — we steer it where you need it.</p>
+          <div class="meta-pills">
+            <span class="pill">Grade</span>
+            <span class="pill">Level</span>
+            <span class="pill">Demo</span>
+            <span class="pill">Haul</span>
+            <span class="pill">Gravel</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Common Jobs</h4>
+              <ul>
+                <li>Driveway prep &amp; gravel spread</li>
+                <li>Yard level + grade</li>
+                <li>Pad prep for shed / hot tub</li>
+                <li>Brush + dirt push</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Rate</h4>
+              <ul>
+                <li>Hourly with operator</li>
+                <li>Half-day &amp; full-day rates</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=skid-steer" class="btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc" id="excavator">
+        <div class="img-slot on-cream ratio-4x3">
+          <img src="assets/img/svc-excavator.png" alt="Mini-excavator digging a trench in a residential backyard" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <div class="svc-num">SVC / 09 — Excavator</div>
+          <h2><em>Excavator</em> work.</h2>
+          <p class="lede">Trenching, digging, stump removal, drainage prep. Done clean and to spec. If it needs to come out of the ground — or go into it — this is the machine for the job.</p>
+          <div class="meta-pills">
+            <span class="pill">Dig</span>
+            <span class="pill">Trench</span>
+            <span class="pill">Stump</span>
+            <span class="pill">Drain Prep</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Common Jobs</h4>
+              <ul>
+                <li>French drain trenching</li>
+                <li>Stump &amp; root removal</li>
+                <li>Utility line digs</li>
+                <li>Pond / footer holes</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// Rate</h4>
+              <ul>
+                <li>Hourly with operator</li>
+                <li>Job-quoted for big work</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=excavator" class="btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc featured drain" id="french-drain">
+        <div class="img-slot ratio-4x3">
+          <img src="assets/img/svc-french-drain.png" alt="French drain installation showing perforated pipe in a gravel-filled trench" loading="lazy">
+        </div>
+        <div class="svc-body">
+          <span class="badge">High-Demand</span>
+          <div class="svc-num">SVC / 10 — French Drains</div>
+          <h2>French <em>drains.</em></h2>
+          <p class="lede">Standing water in the yard? Wet basement from runoff? We design and install French drain systems using perforated pipe, gravel, and filter fabric — plus catch basins and downspout extensions when the job calls for it.</p>
+          <div class="meta-pills">
+            <span class="pill">French Drains</span>
+            <span class="pill">Catch Basins</span>
+            <span class="pill">Downspout Ext.</span>
+            <span class="pill">Free Walk-Through</span>
+          </div>
+          <div class="row-2">
+            <div>
+              <h4>// Cost Snapshot</h4>
+              <ul>
+                <li>Small yards: $1,500-$3,000</li>
+                <li>Medium: $3,000-$6,000</li>
+                <li>Large / severe: $6,000-$12,000+</li>
+              </ul>
+            </div>
+            <div>
+              <h4>// What's In It</h4>
+              <ul>
+                <li>Perforated pipe + gravel + fabric</li>
+                <li>Catch basins where needed</li>
+                <li>Outflow tie-in or daylight</li>
+                <li>Sod / mulch restore</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cta-row">
+            <a href="contact.html?svc=french-drain" class="btn-primary">Free Walk-Through</a>
+            <a href="tel:+18592480576" class="btn-ghost">Call (859) 248-0576</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="bundle-strip">
+  <h2>Stack 'em. <em>Save more.</em></h2>
+  <p style="max-width:560px;margin:0 auto;font-size:16px;">Pick more than one service from the list and the discount stacks. The Bust Pack builder on the home page does the math.</p>
+  <div class="tiers">
+    <div class="tier">1 SVC · Full Price</div>
+    <div class="tier">2 SVCs · 5% Off</div>
+    <div class="tier">3 SVCs · 10% Off</div>
+    <div class="tier">4+ SVCs · 15% Off · BUSTPACK15</div>
+  </div>
+  <div style="margin-top:28px;">
+    <a href="index.html#bundle" class="btn-primary" style="background:var(--ink);color:var(--marigold);border-color:var(--marigold);">Build a Bust Pack</a>
+  </div>
+</div>
+
+<section class="section bg-ink">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;">
+    <div class="section-eyebrow" style="color:var(--marigold);">// One Crew · One Number · 365 Days</div>
+    <h2 class="section-title" style="margin-bottom:24px;">Ready to <em>bust it?</em></h2>
+    <p style="max-width:580px;margin:0 auto 32px;font-size:18px;color:var(--cream-2);">Tell us what's busted and we'll show up with the right machine, the right crew, and the right number on the quote. Free walk-throughs in Central Kentucky.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
+      <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+      <a href="tel:+18592480576" class="btn-ghost">(859) 248-0576</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo">LAWN BUSTERZ</div>
+      <p class="foot-tag">Property maintenance done right — first mow of spring to last shovel of winter.</p>
+      <address style="font-style:normal;font-size:14px;line-height:1.7;">
+        <strong>Lawn Busterz Property Maintenance</strong><br>
+        Richmond, Kentucky<br>
+        <a href="tel:+18592480576">(859) 248-0576</a><br>
+        <a href="mailto:hello@lawnbusterz.com">hello@lawnbusterz.com</a>
+      </address>
+    </div>
+    <div class="foot-col">
+      <h4>Lawn &amp; Yard</h4>
+      <a href="services.html#mowing">Mowing</a>
+      <a href="services.html#mulching">Mulching</a>
+      <a href="services.html#weed-control">Weed Control</a>
+      <a href="services.html#weedeating">Weedeating</a>
+    </div>
+    <div class="foot-col">
+      <h4>Heavy &amp; Specialty</h4>
+      <a href="services.html#snow">Snow Removal</a>
+      <a href="services.html#skid-steer">Skid Steer</a>
+      <a href="services.html#excavator">Excavator</a>
+      <a href="services.html#french-drain">French Drains</a>
+    </div>
+    <div class="foot-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html#spin">Pull To Save</a>
+      <a href="index.html#bundle">Bust Pack</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Lawn Busterz Property Maintenance · Richmond, Kentucky · Licensed &amp; Insured</span>
+    <span>Sister Co. of Clog Busterz LLC</span>
+  </div>
+</footer>
+
+<div class="sticky-mobile-bar">
+  <a class="call" href="tel:+18592480576">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+    Call Now
+  </a>
+  <a class="text" href="sms:+18592480576?&body=Hey Lawn Busterz, I need a quote for ">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    Text Quote
+  </a>
+</div>
+
+<script>
+  (function(){
+    var burger = document.getElementById('burger');
+    var sheet  = document.getElementById('mobileSheet');
+    var close  = document.getElementById('sheetClose');
+    function toggle(open){
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      sheet.classList.toggle('open', open);
+      sheet.setAttribute('aria-hidden', open ? 'false' : 'true');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    burger.addEventListener('click', function(){ toggle(!sheet.classList.contains('open')); });
+    close.addEventListener('click', function(){ toggle(false); });
+    sheet.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ toggle(false); }); });
+  })();
+</script>
+
+</body>
+</html>
