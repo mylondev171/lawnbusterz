@@ -15,36 +15,6 @@
 <link rel="stylesheet" href="assets/site.css">
 <style>
   /* About-page specific layouts */
-  .story-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 56px;
-    align-items: start;
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  .story-grid h2 {
-    font-family: "Anton", sans-serif;
-    font-size: clamp(40px, 5vw, 72px);
-    line-height: .92;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-  }
-  .story-grid h2 em {
-    font-family: "Fraunces", serif;
-    font-style: italic;
-    font-weight: 300;
-    text-transform: lowercase;
-    color: var(--marigold);
-  }
-  .story-grid p {
-    font-size: 17px;
-    line-height: 1.65;
-    margin-bottom: 16px;
-    color: var(--cream-2);
-  }
-  .story-grid p strong { color: var(--cream); }
-
   .pillar-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,32 +68,6 @@
   @media (max-width: 520px) {
     .fleet-grid .item-s, .fleet-grid .item-q { grid-column: span 12; }
   }
-
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  .team-card { background: var(--cream-2); padding: 0; border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
-  .team-card .img-slot { border: 0; border-bottom: 2px solid var(--ink); aspect-ratio: 4/5; }
-  .team-card .body { padding: 22px; }
-  .team-card h3 {
-    font-family: "Anton", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .team-card .role {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    letter-spacing: .2em;
-    color: var(--rust);
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-  .team-card p { font-size: 14px; color: var(--moss); line-height: 1.55; }
 
   .sister-banner {
     background: var(--ink);
@@ -207,14 +151,11 @@
     margin-top: 6px;
   }
   @media (max-width: 1000px) {
-    .story-grid { grid-template-columns: 1fr; gap: 32px; }
     .pillar-grid { grid-template-columns: repeat(2, 1fr); }
-    .team-grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 700px) {
     .stat-row { grid-template-columns: repeat(2, 1fr); }
     .pillar-grid { grid-template-columns: 1fr; }
-    .team-grid { grid-template-columns: 1fr; }
     .sister-banner { padding: 36px 20px; }
     .stat-strip { padding: 28px 20px; }
     .pillar { padding: 24px; }
@@ -279,22 +220,6 @@
 </section>
 
 <div class="hazard-stripe"></div>
-
-<!-- STORY -->
-<section class="section bg-moss-2">
-  <div class="story-grid">
-    <div>
-      <div class="section-eyebrow" style="color:var(--marigold);">// The Story</div>
-      <h2>It started with <em>a plow.</em></h2>
-      <p>The first version of Lawn Busterz was a single truck and a snow plow taking <strong>3am calls</strong> across Madison County. Driveways, walkways, parking lots — whatever needed clearing before the morning rush.</p>
-      <p>One winter turned into a full year of property work. Customers asked if we mowed in the summer. Then if we mulched. Then if we could fix the standing water in the back yard. The answer kept being <strong>yes</strong>, and the equipment list kept growing.</p>
-      <p>Today Lawn Busterz runs ten core services across Central Kentucky — mowing, mulching, weed control, flea &amp; tick spraying, debris cleanup, snow removal, skid steer, excavator, French drains, and weedeating. Same family. Same number. Same crew that started in the snow.</p>
-    </div>
-    <div class="img-slot ratio-4x3">
-      <img src="assets/img/about-founder-truck.png" alt="Family-owned contractor truck with snow plow and mower trailer at golden hour" loading="lazy">
-    </div>
-  </div>
-</section>
 
 <!-- STATS -->
 <div class="stat-strip">
@@ -368,63 +293,6 @@
       <div class="img-slot on-cream item-q">
         <img src="assets/img/fleet-sprayer.png" alt="Yellow backpack sprayer and lawn-care equipment on a driveway" loading="lazy">
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section class="section bg-moss">
-  <div style="max-width:1300px;margin:0 auto;">
-    <div class="section-head" style="border-color:var(--cream);">
-      <div>
-        <div class="section-eyebrow" style="color:var(--marigold);">// The Crew</div>
-        <h2 class="section-title">Who shows <em>up.</em></h2>
-      </div>
-      <div class="section-meta" style="color:var(--cream-2);">Real names. Real faces.<br>Same crew every visit.</div>
-    </div>
-    <div class="team-grid">
-      <article class="team-card">
-        <div class="img-slot ratio-3x4">
-          <div class="img-slot-inner">
-            <div class="img-slot-eyebrow">// Photo Placeholder</div>
-            <div class="img-slot-label">Founder portrait</div>
-            <div class="img-slot-hint">Outdoor, with a truck or machine</div>
-          </div>
-        </div>
-        <div class="body">
-          <h3>[Founder Name]</h3>
-          <div class="role">// Owner / Operator</div>
-          <p>The first hand on the plow and the last call in the storm. Runs every walk-through, signs every quote, and still drives the lead truck.</p>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="img-slot ratio-3x4">
-          <div class="img-slot-inner">
-            <div class="img-slot-eyebrow">// Photo Placeholder</div>
-            <div class="img-slot-label">Crew lead</div>
-            <div class="img-slot-hint">Action shot, on a mow or dig</div>
-          </div>
-        </div>
-        <div class="body">
-          <h3>[Crew Lead Name]</h3>
-          <div class="role">// Field Lead</div>
-          <p>Runs the daily route. Sharpens the blades, fuels the rigs, makes sure the cuts are straight and the edges are clean. The reason your yard looks the same every visit.</p>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="img-slot ratio-3x4">
-          <div class="img-slot-inner">
-            <div class="img-slot-eyebrow">// Photo Placeholder</div>
-            <div class="img-slot-label">Heavy equipment op</div>
-            <div class="img-slot-hint">In the seat of skid / excavator</div>
-          </div>
-        </div>
-        <div class="body">
-          <h3>[Operator Name]</h3>
-          <div class="role">// Heavy Equipment</div>
-          <p>Skid steer, excavator, French drain trench work, demolition, grading. If the job needs a machine bigger than a push mower, this is who's running it.</p>
-        </div>
-      </article>
     </div>
   </div>
 </section>
