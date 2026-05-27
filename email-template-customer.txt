@@ -10,7 +10,7 @@
          Subject:   We got it, {{name}} — your Lawn Busterz quote is in motion
          To Email:  {{email}}
          From Name: Lawn Busterz Property Maintenance
-         Reply-To:  hello@lawnbusterz.com
+         Reply-To:  hello@lawnbusterzky.com
     5. Save the template. EmailJS will fire this automatically to the
        customer whenever the owner notification is sent — no code
        changes needed on the site.
@@ -182,7 +182,7 @@
             320 United Court, Suite 6 · Richmond, KY 40475<br>
             <a href="tel:+18592480576" style="color:#E8A328;text-decoration:none;">(859) 248-0576</a>
             &nbsp;·&nbsp;
-            <a href="mailto:hello@lawnbusterz.com" style="color:#E8A328;text-decoration:none;">hello@lawnbusterz.com</a>
+            <a href="mailto:hello@lawnbusterzky.com" style="color:#E8A328;text-decoration:none;">hello@lawnbusterzky.com</a>
             <br><br>
             <span style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.18em;color:#E8A328;text-transform:uppercase;">
               Licensed &amp; Insured · 24h Quote Turnaround · Free Walk-throughs

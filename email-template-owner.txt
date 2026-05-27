@@ -5,7 +5,7 @@
   Paste this entire block into the EmailJS template HTML editor.
   Template Settings:
     Subject:   New Quote Request — {{name}} ({{city}}, KY)
-    To Email:  hello@lawnbusterz.com
+    To Email:  hello@lawnbusterzky.com
     From Name: Lawn Busterz Website
     Reply-To:  {{email}}
   ====================================================================
