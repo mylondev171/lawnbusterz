@@ -13,6 +13,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500;700&family=Fraunces:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;700&display=swap">
 <link rel="stylesheet" href="assets/site.css">
+
+<!-- EmailJS SDK + Config -->
+<script>
+  // Values from https://dashboard.emailjs.com
+  window.EMAILJS_PUBLIC_KEY  = 'ZXnIDN-8qHbx-IJs8';
+  window.EMAILJS_SERVICE_ID  = 'service_z5o1dw1';
+  window.EMAILJS_TEMPLATE_ID = 'template_nwykmgy';
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 <style>
   .contact-grid {
     display: grid;
@@ -576,22 +585,86 @@
     });
   })();
 
-  // Quote form: client-side success state (no backend wired here).
-  document.getElementById('contactForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    var hp = this.querySelector('input[name="hp"]');
-    if (hp && hp.value) return; // bot
-    var required = this.querySelectorAll('[required]');
-    var ok = true;
-    required.forEach(function(el){
-      if (!el.value.trim()) { ok = false; el.style.borderColor = 'var(--rust)'; }
-      else { el.style.borderColor = 'var(--moss)'; }
+  // Quote form: EmailJS-powered submission.
+  (function(){
+    var form = document.getElementById('contactForm');
+    var success = document.getElementById('formSuccess');
+    var submitBtn = form.querySelector('.form-submit');
+
+    function isPlaceholder(v){ return !v || /^YOUR_/.test(v); }
+    function emailjsConfigured(){
+      return window.emailjs
+        && !isPlaceholder(window.EMAILJS_PUBLIC_KEY)
+        && !isPlaceholder(window.EMAILJS_SERVICE_ID)
+        && !isPlaceholder(window.EMAILJS_TEMPLATE_ID);
+    }
+
+    // Init when the SDK script (loaded with defer) is ready.
+    window.addEventListener('DOMContentLoaded', function(){
+      if (window.emailjs && !isPlaceholder(window.EMAILJS_PUBLIC_KEY)) {
+        emailjs.init({ publicKey: window.EMAILJS_PUBLIC_KEY });
+      }
     });
-    if (!ok) return;
-    document.getElementById('formSuccess').classList.add('show');
-    this.reset();
-    document.getElementById('formSuccess').scrollIntoView({behavior:'smooth', block:'center'});
-  });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      // Honeypot
+      var hp = form.querySelector('input[name="hp"]');
+      if (hp && hp.value) return;
+
+      // Required field validation
+      var required = form.querySelectorAll('[required]');
+      var ok = true;
+      required.forEach(function(el){
+        if (!el.value.trim()) { ok = false; el.style.borderColor = 'var(--rust)'; }
+        else { el.style.borderColor = 'var(--moss)'; }
+      });
+      if (!ok) return;
+
+      var services = Array.from(form.querySelectorAll('input[name="svc"]:checked'))
+        .map(function(c){ return c.value; }).join(', ') || 'None selected';
+
+      var params = {
+        name: form.name.value,
+        phone: form.phone.value,
+        email: form.email.value || '(not provided)',
+        city: form.city.value,
+        prop: form.prop.value,
+        services: services,
+        message: form.message.value || '(no details)',
+        reach: form.reach.value,
+        urgency: form.urgency.value,
+      };
+
+      function showSuccess(){
+        success.classList.add('show');
+        form.reset();
+        success.scrollIntoView({ behavior:'smooth', block:'center' });
+      }
+
+      if (!emailjsConfigured()) {
+        console.warn('EmailJS not configured — set EMAILJS_PUBLIC_KEY / SERVICE_ID / TEMPLATE_ID in contact.html. Showing success state for now.');
+        showSuccess();
+        return;
+      }
+
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      emailjs.send(window.EMAILJS_SERVICE_ID, window.EMAILJS_TEMPLATE_ID, params)
+        .then(function(){ showSuccess(); })
+        .catch(function(err){
+          console.error('EmailJS error:', err);
+          alert("Sorry — your message didn't go through. Please call (859) 248-0576 or email hello@lawnbusterz.com.");
+        })
+        .finally(function(){
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalText;
+        });
+    });
+  })();
 </script>
 
 </body>

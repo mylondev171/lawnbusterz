@@ -1,0 +1,176 @@
+<!--
+  ====================================================================
+  LAWN BUSTERZ — OWNER NOTIFICATION (Internal Quote Request)
+  --------------------------------------------------------------------
+  Paste this entire block into the EmailJS template HTML editor.
+  Template Settings:
+    Subject:   New Quote Request — {{name}} ({{city}}, KY)
+    To Email:  hello@lawnbusterz.com
+    From Name: Lawn Busterz Website
+    Reply-To:  {{email}}
+  ====================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Quote Request — {{name}}</title>
+</head>
+<body style="margin:0;padding:0;background:#E8DEC4;font-family:Arial,Helvetica,sans-serif;color:#0E1A12;-webkit-font-smoothing:antialiased;">
+
+<!-- Preheader (hidden) -->
+<div style="display:none;font-size:1px;color:#E8DEC4;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">
+  New {{urgency}} request from {{name}} in {{city}} — {{services}}.
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E8DEC4;padding:24px 12px;">
+  <tr>
+    <td align="center">
+
+      <!-- Top hazard strip -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
+        <tr>
+          <td style="height:10px;background:repeating-linear-gradient(135deg,#E8A328 0 14px,#0E1A12 14px 28px);font-size:0;line-height:0;">&nbsp;</td>
+        </tr>
+      </table>
+
+      <!-- Header (ink) -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#0E1A12;border-left:4px solid #E8A328;border-right:4px solid #E8A328;">
+        <tr>
+          <td style="padding:28px 32px 22px;">
+            <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#E8A328;text-transform:uppercase;margin-bottom:10px;">
+              // New Quote Request
+            </div>
+            <div style="font-family:Impact,'Arial Black',sans-serif;font-size:34px;line-height:1;color:#F2EBD8;text-transform:uppercase;letter-spacing:.02em;">
+              SOMETHING'S <span style="font-family:Georgia,serif;font-style:italic;font-weight:300;color:#E8A328;text-transform:lowercase;">busted.</span>
+            </div>
+            <div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#E8DEC4;margin-top:10px;line-height:1.5;">
+              <strong style="color:#F2EBD8;">{{name}}</strong> from <strong style="color:#F2EBD8;">{{city}}, KY</strong> just sent a quote request from lawnbusterz.com.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td style="background:#E8A328;padding:10px 32px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.18em;color:#0E1A12;text-transform:uppercase;font-weight:700;">
+            URGENCY · {{urgency}}
+          </td>
+        </tr>
+      </table>
+
+      <!-- Body card (cream) -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#F2EBD8;border-left:4px solid #E8A328;border-right:4px solid #E8A328;">
+        <tr>
+          <td style="padding:28px 32px 12px;">
+
+            <!-- Contact block -->
+            <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#1F3A26;text-transform:uppercase;margin-bottom:12px;">
+              // Contact
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;width:35%;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#1F3A26;text-transform:uppercase;">Name</td>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#0E1A12;font-weight:700;">{{name}}</td>
+              </tr>
+              <tr>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#1F3A26;text-transform:uppercase;">Phone</td>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#0E1A12;font-weight:700;">
+                  <a href="tel:{{phone}}" style="color:#C0461E;text-decoration:none;">{{phone}}</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#1F3A26;text-transform:uppercase;">Email</td>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#0E1A12;font-weight:700;">
+                  <a href="mailto:{{email}}" style="color:#C0461E;text-decoration:none;">{{email}}</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#1F3A26;text-transform:uppercase;">Reach Via</td>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#0E1A12;font-weight:700;">{{reach}}</td>
+              </tr>
+            </table>
+
+            <!-- Property block -->
+            <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#1F3A26;text-transform:uppercase;margin:28px 0 12px;">
+              // Property
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;width:35%;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#1F3A26;text-transform:uppercase;">City</td>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#0E1A12;font-weight:700;">{{city}}, KY</td>
+              </tr>
+              <tr>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#1F3A26;text-transform:uppercase;">Type</td>
+                <td style="padding:8px 0;border-bottom:1px dashed #1F3A26;font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#0E1A12;font-weight:700;">{{prop}}</td>
+              </tr>
+            </table>
+
+            <!-- Services block (marigold callout) -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:28px;background:#0E1A12;border:2px solid #E8A328;">
+              <tr>
+                <td style="padding:18px 22px;">
+                  <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#E8A328;text-transform:uppercase;margin-bottom:8px;">
+                    // Services Requested
+                  </div>
+                  <div style="font-family:Impact,'Arial Black',sans-serif;font-size:22px;line-height:1.15;color:#F2EBD8;text-transform:uppercase;letter-spacing:.02em;">
+                    {{services}}
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Message block -->
+            <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#1F3A26;text-transform:uppercase;margin:28px 0 12px;">
+              // Job Notes
+            </div>
+            <div style="background:#E8DEC4;border-left:4px solid #1F3A26;padding:16px 18px;font-family:Georgia,serif;font-size:15px;line-height:1.6;color:#0E1A12;font-style:italic;">
+              {{message}}
+            </div>
+
+          </td>
+        </tr>
+
+        <!-- Action row -->
+        <tr>
+          <td style="padding:8px 32px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" style="padding-top:18px;">
+                  <a href="tel:{{phone}}" style="display:inline-block;padding:14px 26px;background:#E8A328;color:#0E1A12;font-family:Impact,'Arial Black',sans-serif;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid #0E1A12;box-shadow:4px 4px 0 #0E1A12;">
+                    Call {{name}} Now
+                  </a>
+                  &nbsp;
+                  <a href="mailto:{{email}}" style="display:inline-block;padding:14px 26px;background:#F2EBD8;color:#0E1A12;font-family:Impact,'Arial Black',sans-serif;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid #0E1A12;box-shadow:4px 4px 0 #0E1A12;">
+                    Reply by Email
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Footer -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#1F3A26;border-left:4px solid #E8A328;border-right:4px solid #E8A328;border-bottom:4px solid #E8A328;">
+        <tr>
+          <td style="padding:18px 32px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;color:#E8DEC4;text-transform:uppercase;">
+            Lawn Busterz · Richmond, KY · (859) 248-0576<br>
+            <span style="color:#E8A328;">// Auto-generated from lawnbusterz.com contact form</span>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Bottom hazard strip -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
+        <tr>
+          <td style="height:10px;background:repeating-linear-gradient(135deg,#E8A328 0 14px,#0E1A12 14px 28px);font-size:0;line-height:0;">&nbsp;</td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!--
+  ====================================================================
+  LAWN BUSTERZ — CUSTOMER AUTO-REPLY (Confirmation)
+  --------------------------------------------------------------------
+  HOW TO USE (Option 2 — Auto-Reply toggle):
+    1. Open the OWNER template you created in EmailJS.
+    2. Scroll to "Auto-Reply" and toggle it ON.
+    3. Paste this entire HTML block into the Auto-Reply Content field.
+    4. Set the Auto-Reply fields:
+         Subject:   We got it, {{name}} — your Lawn Busterz quote is in motion
+         To Email:  {{email}}
+         From Name: Lawn Busterz Property Maintenance
+         Reply-To:  hello@lawnbusterz.com
+    5. Save the template. EmailJS will fire this automatically to the
+       customer whenever the owner notification is sent — no code
+       changes needed on the site.
+  ====================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We got it — Lawn Busterz</title>
+</head>
+<body style="margin:0;padding:0;background:#E8DEC4;font-family:Arial,Helvetica,sans-serif;color:#0E1A12;-webkit-font-smoothing:antialiased;">
+
+<!-- Preheader (hidden) -->
+<div style="display:none;font-size:1px;color:#E8DEC4;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">
+  Thanks {{name}} — we'll be in touch within 24 hours with your free quote.
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E8DEC4;padding:24px 12px;">
+  <tr>
+    <td align="center">
+
+      <!-- Top hazard strip -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
+        <tr>
+          <td style="height:10px;background:repeating-linear-gradient(135deg,#E8A328 0 14px,#0E1A12 14px 28px);font-size:0;line-height:0;">&nbsp;</td>
+        </tr>
+      </table>
+
+      <!-- Header (ink) -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#0E1A12;border-left:4px solid #E8A328;border-right:4px solid #E8A328;">
+        <tr>
+          <td align="center" style="padding:34px 32px 8px;">
+            <!-- Logo lockup -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="background:#E8A328;color:#0E1A12;width:38px;height:38px;text-align:center;font-family:Impact,'Arial Black',sans-serif;font-size:22px;line-height:38px;border:2px solid #F2EBD8;">L</td>
+                <td style="padding-left:10px;font-family:Impact,'Arial Black',sans-serif;font-size:20px;letter-spacing:.04em;color:#F2EBD8;text-transform:uppercase;">Lawn Busterz</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:18px 32px 32px;text-align:center;">
+            <div style="font-family:'Courier News','Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#E8A328;text-transform:uppercase;margin-bottom:14px;">
+              // We Got Your Request
+            </div>
+            <div style="font-family:Impact,'Arial Black',sans-serif;font-size:42px;line-height:.98;color:#F2EBD8;text-transform:uppercase;letter-spacing:.02em;">
+              CONSIDER IT<br>
+              <span style="font-family:Georgia,serif;font-style:italic;font-weight:300;color:#E8A328;text-transform:lowercase;">handled.</span>
+            </div>
+            <div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#E8DEC4;margin-top:16px;max-width:440px;margin-left:auto;margin-right:auto;">
+              Thanks for reaching out, <strong style="color:#F2EBD8;">{{name}}</strong>. A real human at Lawn Busterz will look this over and get back to you within <strong style="color:#E8A328;">24 hours</strong> — usually the same business day.
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Body card (cream) -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#F2EBD8;border-left:4px solid #E8A328;border-right:4px solid #E8A328;">
+        <tr>
+          <td style="padding:32px 32px 8px;">
+
+            <!-- What happens next -->
+            <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#1F3A26;text-transform:uppercase;margin-bottom:14px;">
+              // What Happens Next
+            </div>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td valign="top" width="44" style="padding:10px 12px 10px 0;">
+                  <div style="background:#E8A328;color:#0E1A12;width:34px;height:34px;text-align:center;line-height:34px;font-family:Impact,'Arial Black',sans-serif;font-size:18px;border:2px solid #0E1A12;">1</div>
+                </td>
+                <td valign="top" style="padding:10px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#0E1A12;">
+                  <strong>We read every request.</strong> Owner-led shop — your message lands in front of an actual human, not a queue.
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="44" style="padding:10px 12px 10px 0;">
+                  <div style="background:#E8A328;color:#0E1A12;width:34px;height:34px;text-align:center;line-height:34px;font-family:Impact,'Arial Black',sans-serif;font-size:18px;border:2px solid #0E1A12;">2</div>
+                </td>
+                <td valign="top" style="padding:10px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#0E1A12;">
+                  <strong>We reach out within 24 hours.</strong> Via <strong>{{reach}}</strong>, since that's how you said you'd prefer. We'll ask a couple of questions, schedule a walk-through if needed, and lock down pricing.
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="44" style="padding:10px 12px 10px 0;">
+                  <div style="background:#E8A328;color:#0E1A12;width:34px;height:34px;text-align:center;line-height:34px;font-family:Impact,'Arial Black',sans-serif;font-size:18px;border:2px solid #0E1A12;">3</div>
+                </td>
+                <td valign="top" style="padding:10px 0;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#0E1A12;">
+                  <strong>We show up with the right machine.</strong> Mowers, skid-steers, plows, the works — whatever the job calls for, it rolls off the trailer ready.
+                </td>
+              </tr>
+            </table>
+
+            <!-- Recap card -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:30px;background:#0E1A12;border:2px solid #E8A328;">
+              <tr>
+                <td style="padding:22px 24px;">
+                  <div style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.22em;color:#E8A328;text-transform:uppercase;margin-bottom:14px;">
+                    // What You Sent Us
+                  </div>
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td style="padding:6px 0;border-bottom:1px dashed #2B4D34;width:42%;font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;color:#E8DEC4;text-transform:uppercase;">Services</td>
+                      <td style="padding:6px 0;border-bottom:1px dashed #2B4D34;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#F2EBD8;font-weight:700;">{{services}}</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;border-bottom:1px dashed #2B4D34;font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;color:#E8DEC4;text-transform:uppercase;">Property</td>
+                      <td style="padding:6px 0;border-bottom:1px dashed #2B4D34;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#F2EBD8;font-weight:700;">{{prop}} · {{city}}, KY</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;border-bottom:1px dashed #2B4D34;font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;color:#E8DEC4;text-transform:uppercase;">Timing</td>
+                      <td style="padding:6px 0;border-bottom:1px dashed #2B4D34;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#F2EBD8;font-weight:700;">{{urgency}}</td>
+                    </tr>
+                    <tr>
+                      <td style="padding:6px 0;font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;color:#E8DEC4;text-transform:uppercase;vertical-align:top;">Notes</td>
+                      <td style="padding:6px 0;font-family:Georgia,serif;font-size:14px;color:#F2EBD8;font-style:italic;line-height:1.55;">{{message}}</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- Storm-response / quick-call strip -->
+        <tr>
+          <td style="padding:24px 32px 8px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E8A328;border:2px solid #0E1A12;">
+              <tr>
+                <td align="center" style="padding:22px 24px;">
+                  <div style="font-family:Impact,'Arial Black',sans-serif;font-size:22px;line-height:1.1;color:#0E1A12;text-transform:uppercase;letter-spacing:.04em;">
+                    Need it sooner? <span style="font-family:Georgia,serif;font-style:italic;font-weight:300;text-transform:lowercase;">Just call.</span>
+                  </div>
+                  <div style="margin-top:14px;">
+                    <a href="tel:+18592480576" style="display:inline-block;padding:12px 22px;background:#0E1A12;color:#E8A328;font-family:Impact,'Arial Black',sans-serif;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid #0E1A12;box-shadow:4px 4px 0 #F2EBD8;">
+                      (859) 248-0576
+                    </a>
+                    &nbsp;
+                    <a href="sms:+18592480576" style="display:inline-block;padding:12px 22px;background:#F2EBD8;color:#0E1A12;font-family:Impact,'Arial Black',sans-serif;font-size:15px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid #0E1A12;box-shadow:4px 4px 0 #0E1A12;">
+                      Text Us
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Signature -->
+        <tr>
+          <td style="padding:18px 32px 32px;">
+            <div style="font-family:Georgia,serif;font-style:italic;font-size:15px;color:#1F3A26;line-height:1.6;">
+              We don't half-mow. We don't half-show.<br>
+              — The Lawn Busterz Crew
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Footer (moss) -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#1F3A26;border-left:4px solid #E8A328;border-right:4px solid #E8A328;border-bottom:4px solid #E8A328;">
+        <tr>
+          <td style="padding:24px 32px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.65;color:#E8DEC4;">
+            <strong style="color:#F2EBD8;">Lawn Busterz Property Maintenance</strong><br>
+            320 United Court, Suite 6 · Richmond, KY 40475<br>
+            <a href="tel:+18592480576" style="color:#E8A328;text-decoration:none;">(859) 248-0576</a>
+            &nbsp;·&nbsp;
+            <a href="mailto:hello@lawnbusterz.com" style="color:#E8A328;text-decoration:none;">hello@lawnbusterz.com</a>
+            <br><br>
+            <span style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.18em;color:#E8A328;text-transform:uppercase;">
+              Licensed &amp; Insured · 24h Quote Turnaround · Free Walk-throughs
+            </span>
+            <br><br>
+            <span style="font-family:'Courier New',monospace;font-size:10px;letter-spacing:.12em;color:#E8DEC4;text-transform:uppercase;">
+              Service Area: Richmond · Lexington · Berea · Winchester · Nicholasville · Mount Sterling · Stanford · Danville · Lancaster · Madison &amp; Fayette Co.
+            </span>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Bottom hazard strip -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
+        <tr>
+          <td style="height:10px;background:repeating-linear-gradient(135deg,#E8A328 0 14px,#0E1A12 14px 28px);font-size:0;line-height:0;">&nbsp;</td>
+        </tr>
+      </table>
+
+      <!-- Legal / unsubscribe-style -->
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
+        <tr>
+          <td align="center" style="padding:16px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.5;color:#1F3A26;">
+            You're getting this because you submitted a quote request at lawnbusterz.com.<br>
+            © 2026 Lawn Busterz Property Maintenance · Sister Co. of Clog Busterz LLC
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
