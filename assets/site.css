@@ -825,6 +825,39 @@ footer.site-footer {
   line-height: 1.05;
 }
 .guide-card span:last-child { font-size: 14px; line-height: 1.45; }
+.guide-card-thumb {
+  display: block;
+  width: calc(100% + 36px);
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  margin: -18px -18px 4px;
+  border-bottom: 2px solid var(--ink);
+}
+.page-hero .guide-hero {
+  margin: 36px auto 0;
+  max-width: 960px;
+}
+.page-hero .guide-hero .img-slot {
+  border: 2px solid var(--marigold);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+.guide-mid {
+  margin: 0.2em 0 1.6em;
+}
+.guide-mid .img-slot {
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--marigold);
+}
+.guide-hero img,
+.guide-mid img {
+  max-width: 100%;
+}
 @media (max-width: 640px) {
   .guide-prose table { display: block; overflow-x: auto; }
+  .page-hero .guide-hero { margin-top: 24px; }
+  .page-hero .guide-hero .img-slot,
+  .guide-mid .img-slot { box-shadow: 3px 3px 0 var(--ink); }
 }
