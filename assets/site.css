@@ -100,6 +100,46 @@ nav.site-nav {
 .nav-links a { padding: 6px 0; border-bottom: 2px solid transparent; transition: border-color .2s, color .2s; }
 .nav-links a:hover,
 .nav-links a.is-active { color: var(--marigold); border-color: var(--marigold); }
+
+.nav-links > li.has-drop { position: relative; }
+.nav-drop {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 240px;
+  background: var(--ink);
+  border: 2px solid var(--marigold);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, .35);
+  padding: 6px 0;
+  z-index: 200;
+  list-style: none;
+}
+.nav-drop::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -14px;
+  height: 14px;
+}
+.nav-links > li.has-drop:hover > .nav-drop,
+.nav-links > li.has-drop:focus-within > .nav-drop { display: block; }
+.nav-drop a {
+  display: block;
+  padding: 10px 16px;
+  border-bottom: 0;
+  color: var(--cream);
+  white-space: nowrap;
+  letter-spacing: .08em;
+}
+.nav-drop a:hover,
+.nav-drop a.is-active {
+  color: var(--marigold);
+  border-color: transparent;
+  background: rgba(232, 163, 40, .12);
+}
 .nav-phone {
   background: var(--marigold);
   color: var(--ink);
@@ -187,6 +227,7 @@ nav.site-nav {
   display: none;
   flex-direction: column;
   padding: 80px 28px 32px;
+  overflow-y: auto;
 }
 .mobile-sheet.open { display: flex; }
 .mobile-sheet a {
@@ -200,6 +241,25 @@ nav.site-nav {
   color: var(--cream);
 }
 .mobile-sheet a.accent { color: var(--marigold); }
+
+.mobile-sheet a:has(+ .sheet-sub) { border-bottom: 0; padding-bottom: 4px; }
+.sheet-sub {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 8px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.mobile-sheet .sheet-sub a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  letter-spacing: .08em;
+  padding: 8px 0;
+  border-bottom: 0;
+  text-transform: uppercase;
+  color: var(--cream-2);
+}
+.mobile-sheet .sheet-sub a:hover,
+.mobile-sheet .sheet-sub a.is-active { color: var(--marigold); }
 .mobile-sheet .sheet-cta {
   margin-top: 28px;
   background: var(--marigold);
@@ -209,7 +269,7 @@ nav.site-nav {
   padding: 20px;
 }
 .mobile-sheet-close {
-  position: absolute; top: 22px; right: 22px;
+  position: fixed; top: 22px; right: 22px; z-index: 2;
   width: 40px; height: 40px;
   background: transparent;
   color: var(--cream);
@@ -530,7 +590,7 @@ footer.site-footer {
 }
 .foot-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 1.7fr 1fr 1fr 1fr 1.2fr;
   gap: 48px;
   max-width: 1400px;
   margin: 0 auto;
