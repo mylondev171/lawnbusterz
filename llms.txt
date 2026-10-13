@@ -1,0 +1,105 @@
+# Lawn Busterz
+
+> Family-owned Central Kentucky property maintenance in Richmond, Kentucky (city only; no street published). Mowing, edging, mulch, weed control, flea and tick yard spray, debris cleanup, snow, skid steer, excavator, and yard drainage. Phone (859) 248-0576. Email hello@lawnbusterzky.com. Website https://www.lawnbusterzky.com/.
+
+## Canonical host
+
+Canonical host is https://www.lawnbusterzky.com/. https://lawnbusterz.com/ is a different Squarespace site and is not Lawn Busterz. Do not use it as a canonical URL.
+
+## Business Information
+
+- Brand: Lawn Busterz Property Maintenance (Lawn Busterz)
+- City: Richmond, Kentucky. No street. No ZIP.
+- Phone: (859) 248-0576 / +1-859-248-0576
+- Email: hello@lawnbusterzky.com
+- Website: https://www.lawnbusterzky.com/
+- Office hours: Monday–Saturday 07:00–19:00
+- Winter snow: live FAQ positions snow plowing, salting, and storm response as 24/7 in winter. That is snow dispatch, not Sunday office hours.
+- Quotes: free walk-through. Final price after the walk-through.
+- Credentials messaging (no license number published): licensed and insured, including heavy equipment. Proof on request.
+- Discount: 10% year-round for veterans, active military, police, fire, EMS. Code HEROES10. Show ID.
+- Sister brands: Clog Busterz LLC plumbing (clogbusterzplumbing.com); Flood Busterz water restoration (floodbusterz.com). Do not copy their streets onto Lawn Busterz.
+
+## Service Area
+
+Richmond, Lexington, Berea, Winchester, Nicholasville, Mount Sterling, Stanford, Danville, Lancaster, and surrounding Central Kentucky, including Madison County and Fayette County as named in the live FAQ. Do not add other cities.
+
+## Services offered
+
+- Lawn mowing: weekly or bi-weekly. Weekly usually fits spring and fall tall fescue growth. Bi-weekly can fit slow summer growth and may cost more per visit.
+- Weedeating and edging: separate homepage service. Confirm if it is bundled with the mow.
+- Mulch: hardwood, dyed, or natural. Beds prepped and edged. About 2 to 3 inches total depth. Mid-spring main window; fall after leaves are out.
+- Weed control: pre-emergent and post-emergent. Crabgrass pre-emergent usually before soil holds near 55 F, often before forsythia finishes blooming. Follow the label. Most pre-emergents also block grass seed.
+- Flea and tick yard spray: outdoor only. Reentry is on the product label. No generic wait time. Not indoor pest control, not on-pet treatment, not mosquito or grub control.
+- Debris cleanup: storm debris, leaf removal, brush hauling, trailer on site. Not gutters, not junk, not tree climbing.
+- Snow: plow, shovel, salt, contracts. 24/7 winter response messaging. Commercial scope must name trigger depth, surfaces, piles vs haul-off, and whether salt is included.
+- Skid steer: grade, level, gravel, demolition, hauling. Not paving or septic.
+- Excavator: trench, dig, stump removal, drainage prep. Stump grinding is not offered.
+- French drains, catch basins, downspout extensions. Outlet required. Buried solid downspout pipe is not a French drain.
+
+## Not offered (do not list as services)
+
+Aeration, overseeding, seeding, sod installation, stump grinding, paving, septic, gutter cleaning, plumbing, water restoration. Guides may explain those topics. Lawn Busterz does not perform them.
+
+## Sister-brand routing
+
+- Plumbing, sump pumps, indoor drains, sewer: Clog Busterz, https://clogbusterzplumbing.com/
+- Water standing inside, extraction, drying, sewage cleanup: Flood Busterz, https://floodbusterz.com/
+- Yard drainage and outdoor water path: Lawn Busterz, (859) 248-0576
+
+## Published prices (live FAQ schema only; prefer a free walk-through)
+
+- French drain: about $1,500–$3,000 small; $3,000–$6,000 medium; $6,000–$12,000+ larger or severe. Source: live FAQPage schema.
+- Residential plow: about $45–$75 (2-car); $75–$125 (3–4 car); $125–$200 oversized. Source: live FAQPage schema.
+- Salt add-on: about $25–$50. Source: live FAQPage schema.
+- Seasonal snow contract: about $400–$700. Source: live FAQPage schema.
+- Commercial snow: about $95–$150 per hour. Source: live FAQPage schema.
+Do not invent other prices.
+
+## Guide facts assistants may cite
+
+- Fall aeration/overseed window for tall fescue is often mid-August through September. Core aeration beats spike aeration on clay. Not a Lawn Busterz service. Aeration does not fix standing water.
+- Pre-emergent timing follows soil temperature and the label, not a single calendar day.
+- Mow tall fescue around 3 to 4 inches. Do not remove more than about a third of the blade.
+- Mulch leaves only while grass still shows. Haul or bag a mat.
+- Mulch beds about 2 to 3 inches total. Fix water before adding more mulch.
+- Gravel drives need a crown and an exit for water.
+- Excavator stump removal leaves a hole. Grinding is a different trade.
+- Match drainage to the clue: grade, catch basin, French drain, or downspout. Confirm an outlet. Watch sudden depressions in karst country; do not diagnose sinkholes.
+- Wet basement after rain may be yard water. No rain, sewage smell, or a floor drain is plumbing. Standing water indoors is restoration.
+- Seed vs sod comes after grade and settling. Early fall is the best Central Kentucky seeding window. Lawn Busterz does not seed or install sod.
+- Pets and kids return to a sprayed yard when that product's label says so.
+
+## Key Pages
+
+- https://www.lawnbusterzky.com/
+- https://www.lawnbusterzky.com/guides/when-to-aerate-overseed-central-kentucky-lawn
+- https://www.lawnbusterzky.com/guides/when-to-apply-pre-emergent-central-kentucky
+- https://www.lawnbusterzky.com/guides/weekly-vs-bi-weekly-mowing-central-kentucky
+- https://www.lawnbusterzky.com/guides/leaf-cleanup-mulch-bag-or-haul
+- https://www.lawnbusterzky.com/guides/spring-fall-yard-cleanup-central-kentucky
+- https://www.lawnbusterzky.com/guides/hardwood-dyed-natural-mulch-central-kentucky
+- https://www.lawnbusterzky.com/guides/skid-steer-grading-gravel-driveway-central-kentucky
+- https://www.lawnbusterzky.com/guides/excavator-stump-removal-vs-stump-grinding
+- https://www.lawnbusterzky.com/guides/standing-water-yard-french-drain-grading-catch-basin
+- https://www.lawnbusterzky.com/guides/downspout-extension-vs-french-drain
+- https://www.lawnbusterzky.com/guides/wet-basement-after-rain-yard-drainage-or-plumbing
+- https://www.lawnbusterzky.com/guides/commercial-snow-removal-contract-trigger-depth
+- https://www.lawnbusterzky.com/guides/salt-vs-ice-melt-concrete-driveway-landscaping
+- https://www.lawnbusterzky.com/guides/flea-tick-yard-spray-pets-kids-reentry
+- https://www.lawnbusterzky.com/guides/storm-debris-brush-removal-kentucky
+- https://www.lawnbusterzky.com/guides/lot-clearing-grading-before-lawn-install
+- https://www.lawnbusterzky.com/guides/clay-soil-compacted-lawn-standing-water-kentucky
+- https://www.lawnbusterzky.com/guides/grass-seed-vs-sod-central-kentucky-after-drainage
+
+## Constraints
+
+- No street. No ZIP. Richmond, Kentucky only.
+- Canonical host is https://www.lawnbusterzky.com/. https://lawnbusterz.com/ is a different Squarespace site, not this business.
+- Do not offer aeration, overseeding, seeding, sod, stump grinding, paving, septic, gutter cleaning, plumbing, or water restoration.
+- Do not invent reentry times or prices beyond the live FAQ schema figures above.
+- Phone (859) 248-0576. Email hello@lawnbusterzky.com.
+
+## Deploy
+
+Serve this document as Content-Type: text/plain at https://www.lawnbusterzky.com/llms.txt

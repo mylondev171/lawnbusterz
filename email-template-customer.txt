@@ -179,7 +179,7 @@
         <tr>
           <td style="padding:24px 32px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.65;color:#E8DEC4;">
             <strong style="color:#F2EBD8;">Lawn Busterz Property Maintenance</strong><br>
-            320 United Court, Suite 6 · Richmond, KY 40475<br>
+            Richmond, Kentucky<br>
             <a href="tel:+18592480576" style="color:#E8A328;text-decoration:none;">(859) 248-0576</a>
             &nbsp;·&nbsp;
             <a href="mailto:hello@lawnbusterzky.com" style="color:#E8A328;text-decoration:none;">hello@lawnbusterzky.com</a>
@@ -206,7 +206,7 @@
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;">
         <tr>
           <td align="center" style="padding:16px 24px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.5;color:#1F3A26;">
-            You're getting this because you submitted a quote request at lawnbusterz.com.<br>
+            You're getting this because you submitted a quote request at www.lawnbusterzky.com.<br>
             © 2026 Lawn Busterz Property Maintenance · Sister Co. of Clog Busterz LLC
           </td>
         </tr>
