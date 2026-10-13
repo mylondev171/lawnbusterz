@@ -1,0 +1,4 @@
+# Guide drafts stay in git and are excluded from the Vercel upload.
+# Publishing a draft: move its folder back to guides/, then link it from
+# the guides hub, sitemap.xml, llms.txt, the nav dropdown, and the footer.
+_drafts
