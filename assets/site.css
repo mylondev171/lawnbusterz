@@ -1,5 +1,5 @@
 /* =============================================================
-   LAWN BUSTERZ — shared design system (about / contact / services)
+   LAWN BUSTERZ, shared design system (about / contact / services)
    Matches the bundled home page (index.html) palette + typography.
    ============================================================= */
 
@@ -793,6 +793,24 @@ footer.site-footer {
 }
 
 /* ---------- GUIDES ---------- */
+/* Self-hosted Oswald 300, latin subset. Used only by guide hero H1s. */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/oswald-300-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Guide hero H1 only. Oswald 300 is a condensed display face with a real
+   light weight. Anton ships only weight 400, so it stays the fallback.
+   text-wrap: balance keeps the last line from being a single word. */
+.page-hero.guide-page .hero-title {
+  font-family: "Oswald", "Anton", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-wrap: balance;
+}
 .guide-prose,
 .guide-narrow { max-width: 760px; margin: 0 auto; }
 .guide-narrow { max-width: 860px; }
