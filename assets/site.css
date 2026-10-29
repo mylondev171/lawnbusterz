@@ -793,6 +793,11 @@ footer.site-footer {
 }
 
 /* ---------- GUIDES ---------- */
+/* Guide H1s only. h1 is bold (700) by default, which thickens Anton.
+   Match the lighter heading weight on .hero-title em and .section-title em. */
+.page-hero.guide-page .hero-title {
+  font-weight: 300;
+}
 .guide-prose,
 .guide-narrow { max-width: 760px; margin: 0 auto; }
 .guide-narrow { max-width: 860px; }
