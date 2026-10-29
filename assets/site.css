@@ -793,10 +793,12 @@ footer.site-footer {
 }
 
 /* ---------- GUIDES ---------- */
-/* Guide H1s only. h1 is bold (700) by default, which thickens Anton.
-   Match the lighter heading weight on .hero-title em and .section-title em. */
+/* Guide hero H1 only. Oswald 300 is a condensed display face with a real
+   light weight. Anton ships only weight 400, so it stays the fallback. */
 .page-hero.guide-page .hero-title {
+  font-family: "Oswald", "Anton", sans-serif;
   font-weight: 300;
+  letter-spacing: 0.03em;
 }
 .guide-prose,
 .guide-narrow { max-width: 760px; margin: 0 auto; }
