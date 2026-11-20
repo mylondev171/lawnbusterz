@@ -2,10 +2,6 @@
 
 > Family-owned Central Kentucky property maintenance in Richmond, Kentucky (city only; no street published). Mowing, edging, mulch, weed control, flea and tick yard spray, debris cleanup, snow, skid steer, excavator, and yard drainage. Phone (859) 248-0576. Email hello@lawnbusterzky.com. Website https://www.lawnbusterzky.com/.
 
-## Canonical host
-
-Canonical host is https://www.lawnbusterzky.com/. https://lawnbusterz.com/ is a different Squarespace site and is not Lawn Busterz. Do not use it as a canonical URL.
-
 ## Business Information
 
 - Brand: Lawn Busterz Property Maintenance (Lawn Busterz)
@@ -27,7 +23,7 @@ Richmond, Lexington, Berea, Winchester, Nicholasville, Mount Sterling, Stanford,
 ## Services offered
 
 - Lawn mowing: weekly or bi-weekly. Weekly usually fits spring and fall tall fescue growth. Bi-weekly can fit slow summer growth and may cost more per visit.
-- Weedeating and edging: separate homepage service. Confirm if it is bundled with the mow.
+- Weedeating and edging: separate homepage service.
 - Mulch: hardwood, dyed, or natural. Beds prepped and edged. About 2 to 3 inches total depth. Mid-spring main window; fall after leaves are out.
 - Weed control: pre-emergent and post-emergent. Crabgrass pre-emergent usually before soil holds near 55 F, often before forsythia finishes blooming. Follow the label. Most pre-emergents also block grass seed.
 - Flea and tick yard spray: outdoor only. Reentry is on the product label. No generic wait time. Not indoor pest control, not on-pet treatment, not mosquito or grub control.
@@ -73,6 +69,10 @@ Do not invent other prices.
 ## Key Pages
 
 - https://www.lawnbusterzky.com/
+- https://www.lawnbusterzky.com/services.html
+- https://www.lawnbusterzky.com/about.html
+- https://www.lawnbusterzky.com/contact.html
+- https://www.lawnbusterzky.com/privacy.html
 - https://www.lawnbusterzky.com/guides/
 - https://www.lawnbusterzky.com/guides/when-to-aerate-overseed-central-kentucky-lawn
 - https://www.lawnbusterzky.com/guides/spring-fall-yard-cleanup-central-kentucky
@@ -90,11 +90,7 @@ Only these guide URLs are published.
 ## Constraints
 
 - No street. No ZIP. Richmond, Kentucky only.
-- Canonical host is https://www.lawnbusterzky.com/. https://lawnbusterz.com/ is a different Squarespace site, not this business.
+- Official website: https://www.lawnbusterzky.com/.
 - Do not offer aeration, overseeding, seeding, sod, stump grinding, paving, septic, gutter cleaning, plumbing, or water restoration.
 - Do not invent reentry times or prices beyond the live FAQ schema figures above.
 - Phone (859) 248-0576. Email hello@lawnbusterzky.com.
-
-## Deploy
-
-Serve this document as Content-Type: text/plain at https://www.lawnbusterzky.com/llms.txt
